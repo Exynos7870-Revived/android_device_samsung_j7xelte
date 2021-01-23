@@ -38,9 +38,14 @@ PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl.7870 \
+    android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
+    android.hardware.bluetooth.audio@2.0-impl \
+    audio.bluetooth.default \
     libbt-vendor
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/bluetooth/bt_vendor.conf:vendor/etc/bluetooth/bt_vendor.conf
 
 # NFC
 PRODUCT_PACKAGES += \
