@@ -122,7 +122,8 @@ void vendor_load_properties()
     }
 
     /* Common properties*/
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys");
+    property_override("ro.build.description", "samsung/on7xeltexc/on7xelte:8.0.0/R16NW/G610FLXXS5CSL5:user/release-keys");
     property_override_quad("ro.product.device", "ro.product.odm.device", "ro.product.system.device", "ro.product.vendor.device", "on7xelte");
 
     std::string device = GetProperty("ro.product.device", "");
