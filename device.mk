@@ -38,8 +38,7 @@ PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service \
+    android.hardware.bluetooth@1.0-service-qti \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
     libbt-vendor
@@ -53,7 +52,7 @@ PRODUCT_PACKAGES += \
     libnfc_nci_jni \
     NfcNci \
     Tag \
-    com.android.nfc_extras
+    com.android.nfc_extras-a3y17lte
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

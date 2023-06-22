@@ -41,6 +41,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_j7xelte
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
+BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
+
 # Wifi
 BOARD_WLAN_DEVICE                := bcmdhd
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
